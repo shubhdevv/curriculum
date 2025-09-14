@@ -42,7 +42,7 @@ How do you contribute when you do not have write access to the repository? Below
 
 The key players in this story will be the `upstream` (the original GitHub repository), the `origin` (your fork of that repo), and the "local" repository (your local clone of `origin`). Think of it as a happy triangle... except that "local" can only pull from `upstream`, not push, as illustrated in the workflow diagram above.
 
-#### Initial setup
+#### Initial setup {#initial-setup}
 
 1. Read [the TOP contributing guide](https://github.com/TheOdinProject/curriculum/blob/main/CONTRIBUTING.md) for the project.
 1. Open the [curriculum repository](https://github.com/TheOdinProject/curriculum/tree/main) in your browser. Use the "Fork" button at the top-right of the repository's page to create a copy of the entire repository (not just one file) in your own GitHub account.
@@ -53,7 +53,7 @@ The key players in this story will be the `upstream` (the original GitHub reposi
 git remote add upstream git@github.com:TheOdinProject/curriculum.git
 ```
 
-#### Ongoing workflow
+#### Ongoing workflow {#ongoing-workflow}
 
 We've got one main branch -- `main`. `main` is for production-ready code. Any code deployed to `main` (on the original repo, not on your fork) will be tested in staging and shipped to production. You'll be working in a feature branch and submitting your pull requests to the `main` branch.
 
@@ -69,7 +69,7 @@ Note that a `git fetch upstream` followed by a `git merge upstream/some_branch` 
 
 </div>
 
-#### Sending your pull request
+#### Sending your pull request  {#sending-your-pull-request}
 
 1. Now that your feature branch is squeaky clean and you know it'll merge cleanly into `main`, the hard part is all over. All that's left is to make the Pull Request (often abbreviated as PR) against our `upstream` repo on GitHub!
 1. Now you want to send your feature branch back up to your `origin` (your fork of the `upstream` repository). You can't send directly to `upstream` because you don't have access, so you'll need to make a pull request. Use `git push origin your_feature_name` to ship your feature branch up to your fork on GitHub.
